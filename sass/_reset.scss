@@ -1,0 +1,101 @@
+::-moz-selection { /* Code for Firefox */
+    background: #ddd;
+    color: #000;
+}
+::selection {
+    background: #ddd;
+    color: #000;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: $default-font-size;
+    line-height: 28px;
+}
+body.home-second {
+    font-family: $source-sans;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #999999;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/**
+ *  Typography
+ *
+ **/
+
+h1, h2, h3,
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6 {
+    
+}
+
+h5, .h5 {
+    
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clear {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom: 1;    
+}
+
+/**
+ *  Reset input fields opacity
+ *
+ **/
+
+input:focus, button:focus {
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+   opacity: 1;
+   color: inherit;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   opacity: 1;
+   color: inherit;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   opacity: 1;
+   color: inherit;
+}
+
+:-ms-input-placeholder {  
+   opacity: 1;
+   color: inherit;
+}
+
+button, input, select, textarea {
+  	font-weight: 500;
+}
+
+.btn:hover, .btn:focus, .btn:active:focus {
+	outline: none;
+}
